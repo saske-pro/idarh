@@ -99,7 +99,7 @@ if (message.content.startsWith(prefix + 'help')) {
     ❖ $resume => لموآصلة الإغنية بعد إيقآفهآ مؤقتا
     ❖ $vol => لتغيير درجة الصوت 100 - 0
     ❖ $stop => لإخرآج البوت من الروم
-    ❖ np => لمعرفة الأغنية المشغلة حآليا
+    ❖ $np => لمعرفة الأغنية المشغلة حآليا
     ❖ $queue => لمعرفة قآئمة التشغيل
 	Soon And I Will Translate The Command To Englih`]
 	let page = 1;
