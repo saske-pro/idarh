@@ -428,7 +428,7 @@ client.channels.get("468836034185265162").sendEmbed(embed)
 });
  
 
-const prefix = ">"
+const prefix = "C"
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -614,7 +614,7 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
-const adminprefix = "$v1";
+const adminprefix = "$v";
 const devs = ['468836034185265162','468836034185265162'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -1383,7 +1383,7 @@ client.on('ready', () => {
   });
 
 client.on('message', message => {
-var prefix = "-";
+var prefix = "$";
       if(message.content === prefix + "hchannel") {
       if(!message.channel.guild) return;
       if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('You Dont Have Perms :x:');
@@ -1396,7 +1396,7 @@ var prefix = "-";
 
 
 client.on('message', message => {
-var prefix = "-";
+var prefix = "$";
       if(message.content === prefix + "schannel") {
       if(!message.channel.guild) return;
       if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(':x:');
@@ -1410,7 +1410,7 @@ var prefix = "-";
 
 
 client.on('message', message => { 
-let prefix = '-'
+let prefix = '$'
     if (message.content.startsWith(prefix + 'emojis')) {
 
         const List = message.guild.emojis.map(e => e.toString()).join(" ");
@@ -1586,7 +1586,7 @@ var fkk =[
 
 
    client.on("message", async message => {
-var prefix = "-";
+var prefix = "$";
 var aoasm =[
     {q:"ما عاصمة **المغرب**",a:"الرباط"},
     {q:"ما عاصمة **افغانستان**",a:"كبل"},
@@ -1743,7 +1743,7 @@ client.on('message', message => {
        });
 
 client.on('message', message => {
-if(message.content.startsWith("-slots")) {
+if(message.content.startsWith("$slots")) {
   let slot1 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
@@ -1981,7 +1981,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/6YhufK**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/JC5ru7j**")
      
      
   message.channel.sendEmbed(embed);
@@ -2051,7 +2051,7 @@ msg.delete();
 
 
 client.on('message', message => {
-      if(message.content.startsWith ("-marry")) {
+      if(message.content.startsWith ("$marry")) {
       if(!message.channel.guild) return message.reply('** This command only for servers **')
       var proposed = message.mentions.members.first()
      
