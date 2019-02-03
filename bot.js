@@ -1500,7 +1500,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return m
 client.on('guildCreate', guild => {
   var embed = new Discord.RichEmbed()
   .setColor(0x5500ff)
-  .setDescription(`**Thank You For Adding The Bot To Your Server If You Need Any Help In The Bot Go To Suuport Server** https://discord.gg/htNpU3J`)
+  .setDescription(`**Thank You For Adding The Bot To Your Server If You Need Any Help In The Bot Go To Suuport Server** https://discord.gg/JC5ru7j`)
       guild.owner.send(embed)
 });
 
@@ -1920,8 +1920,8 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`➡ Click Here `)
-        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=534344262855294976&permissions=8&scope=bot`)
-        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=534344262855294976&permissions=8&scope=bot")        
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot`)
+        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot")        
      message.channel.sendEmbed(embed);
        }
    });
@@ -1932,8 +1932,8 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`➡ Click Here `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot`)
-        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=534344262855294976&permissions=8&scope=bot")        
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot`)
+        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot")        
      message.channel.sendEmbed(embed);
        }
    });
