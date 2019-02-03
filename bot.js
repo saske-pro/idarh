@@ -410,7 +410,7 @@ Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
 Server Count: __${guild.memberCount}__**`);
-client.channels.get("467833183254347797").sendEmbed(embed)
+client.channels.get("468836034185265162").sendEmbed(embed)
 });
 
 client.on('guildDelete', guild => {
@@ -424,7 +424,7 @@ Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
 Server Count: __${guild.memberCount}__**`);
-client.channels.get("467833183254347797").sendEmbed(embed)
+client.channels.get("468836034185265162").sendEmbed(embed)
 });
  
 
@@ -615,7 +615,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "$v1";
-const devs = ['349616310734553088','335027415619338240'];
+const devs = ['468836034185265162','468836034185265162'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -636,7 +636,7 @@ client.user.setAvatar(argresult);
 
 
 client.on('message', ra3d => {
-var prefix = "-";
+var prefix = "$";
                         let args = ra3d.content.split(" ").slice(1).join(" ")
 if(ra3d.content.startsWith(prefix + 'ccolors')) {
     if(!args) return ra3d.channel.send('`How Many Colors??`');
@@ -688,7 +688,7 @@ message.channel.send(embed)
 
 
 client.on("message", function(message) {
-	var prefix = "-";
+	var prefix = "$";
    if(message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content.split(" ").slice(1).join(" ");
     let messageRPS = message.content.split(" ").slice(2).join(" ");
@@ -729,7 +729,7 @@ reaction3.on("collect", r => {
 });
 
  client.on('message', message => {
-	 var prefix ="-";
+	 var prefix ="$";
  if(message.content.startsWith(prefix +"server")){
 if(!message.channel.guild) return message.reply(' ');
 const millis = new Date().getTime() - message.guild.createdAt.getTime();
@@ -754,13 +754,13 @@ message.channel.sendEmbed(embed)
 });
 
 client.on('message', message => {
-    if (message.content.startsWith("-bot")) {
+    if (message.content.startsWith("$bot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO Speed Bot`` ')
+            .setTitle('``INFO Crazy Bot`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
