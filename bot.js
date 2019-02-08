@@ -1712,7 +1712,7 @@ if (message.author.bot) return;
 if (message.content.startsWith(prefix + "contact")) {
 if (!message.channel.guild) return;
 let args = message.content.split(" ").slice(1).join(" ");
-client.users.get("349616310734553088").send(
+client.users.get("468836034185265162").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -1920,8 +1920,8 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`➡ Click Here `)
-        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot`)
-        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot")        
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=543420986964574219&permissions=8&scope=bot`)
+        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=543420986964574219&permissions=8&scope=bot")        
      message.channel.sendEmbed(embed);
        }
    });
@@ -1932,8 +1932,8 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`➡ Click Here `)
-        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot`)
-        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=541335561353429012&permissions=8&scope=bot")        
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=543420986964574219&permissions=8&scope=bot`)
+        .setThumbnail(" https://discordapp.com/api/oauth2/authorize?client_id=543420986964574219&permissions=8&scope=bot")        
      message.channel.sendEmbed(embed);
        }
    });
